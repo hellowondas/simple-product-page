@@ -1,0 +1,77 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+}
+
+
+:root {
+  --black: #000;
+  --white: #FFF;
+  --light-gray: #F3F4F6;
+  --purple: #652CD1;
+  --light-silver-gray: #D2D5DA;
+}
+
+
+body {
+  background-color: var(--white);
+  font-family: "Outfit", sans-serif;
+  max-width: 40rem;
+  min-height: 100vh;
+  padding: 0 5rem;
+}
+
+
+.container {
+  display: flex;
+  flex-direction: column;
+  /* padding: 1rem 3rem; */
+  justify-content: center;
+  align-items: center;
+}
+
+
+.sneaker-img {
+  border-radius: 0.2rem;
+  margin: 2rem 0;
+}
+
+
+.navbar ul {
+  display: flex;
+  flex-direction: row;
+  gap: 0.3rem;
+  font-weight: 600;
+  font-size: 0.8rem;
+  margin-right: 9rem;
+}
+
+
+ul li.gray {
+  color: var(--light-silver-gray);
+}
+
+
+.description {
+  width: 350px;
+  padding: 1.1rem;
+  color: var(--black);
+}
+
+
+
+.description h1 {
+  font-size: 1.4rem;
+  width: 100%;
+}
+
+
+.description p {
+  line-height: 1.5;
+  font-size: 1rem;
+  margin-top: 1rem;
+}
