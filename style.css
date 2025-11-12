@@ -20,9 +20,11 @@
 body {
   background-color: var(--white);
   font-family: "Outfit", sans-serif;
-  max-width: 40rem;
   min-height: 100vh;
-  padding: 0 5rem;
+  padding: 0 1.25rem;
+  /* change from max-width 40rem to 100% so that the layout will work on any device and not restricted to 640px
+  */
+  max-width: 100%;
 }
 
 
@@ -34,10 +36,44 @@ body {
 }
 
 
+/*Figure: Add max-width
+   600px because of large
+   screens and it should
+   take the whole width as
+   in width: 100%
+*/
+figure {
+  width: 100%;
+  max-width: 600px;
+  margin: 0;
+}
+
+
 .sneaker-img {
   border-radius: 0.2rem;
   margin: 2rem 0;
+  
+  /* I use some images in html and   because if this, i want the
+    shoe img to scale properly &
+    and not too big on small screens
+    or too small on large screens. 
+    width was made to fill the
+    container width and max-wdith
+    so used so that img does exceed
+    the container (600px)
+  */
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  display: block;
 }
+
+
+.breadcrumb {
+  width: 100%;
+  text-align: left;
+  align-self: flex-start;
+} 
 
 
 .breadcrumb ul {
@@ -46,7 +82,7 @@ body {
   gap: 0.3rem;
   font-weight: 600;
   font-size: 0.8rem;
-  margin-right: 9rem;
+  margin-bottom: 1rem;
 }
 
 
@@ -59,10 +95,15 @@ ul li.text-gray {
   color: inherit;
 }
 
+
 .product-info {
-  width: 21.875rem;
-  padding: 1.1rem;
   color: var(--black);
+  /* Remove width: 21rem & add width: 100% & max-width: 600px. This is because 21rem was too cramp on 600px+ screens and i want it to fill available space, I also restrict it
+    with max-width of 37rem so it do-
+    es become too long on tablets
+  */
+  width: 100%;
+  max-width: 37.5rem;
 }
 
 
@@ -107,7 +148,6 @@ ul li.text-gray {
   background-color: var(--light-gray);
   align-items: center;
   width: 100%;
-  /* padding: 0.7rem 1.5rem; */
   margin-top: 1.26rem;
   border-radius: .3125rem;
   
@@ -166,26 +206,38 @@ div .b-lack {
   width: 100%;
   margin: 1rem 0.5rem 0.5rem 0;
   font-size: 0.6875rem;
+  
+  /* space between button*/
+  gap: 1rem;
 }
 
 
 .cart-button {
   background-color: var(--purple);
   padding: 0.5rem 0;
-  width: 9.0625rem;
   border-radius: 0.2rem;
   font-family: "Outfit", sans-serif;
   font-weight: 500;
   border: none;
   color: var(--white);
   cursor: pointer;
+  /* Remove width: 9rem, add flex
+     1 & max-width: 12.5rem. This is 
+     so that the two buttons will
+     fill the space and not look 
+     too small on 600px+ screens
+     and the max-width will stop
+     them from being too long on
+     tablets
+  */
+  flex: 1;
+  max-width: 12.5rem;
 }
 
 
 .wishlist-button {
   background-color: var(--white);
   padding: 0.5rem 0;
-  width: 9.0625rem;
   border-radius: 0.2rem;
   border: 2px solid var(--light-silver-gray);
   font-family: "Outfit", sans-serif;
@@ -195,6 +247,20 @@ div .b-lack {
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
+  /* same comment as above*/
+  
+  flex: 1;
+  max-width: 12.5rem;
 }
 
+
+/* The Styles For Tablets */
+@media (min-width: 768px) {
+  
+
+  
+  
+  
+  
+}
 
