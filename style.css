@@ -40,7 +40,7 @@ body {
 }
 
 
-.navbar ul {
+.breadcrumb ul {
   display: flex;
   flex-direction: row;
   gap: 0.3rem;
@@ -50,25 +50,29 @@ body {
 }
 
 
-ul li.gray {
+ul li.text-gray {
   color: var(--light-silver-gray);
 }
 
 
-.the-product {
+.breadcrumb a {
+  color: inherit;
+}
+
+.product-info {
   width: 21.875rem;
   padding: 1.1rem;
   color: var(--black);
 }
 
 
-.the-product h1 {
+.product-info h1 {
   font-size: 1.4rem;
   width: 100%;
 }
 
 
-.the-product p {
+.product-info p {
   line-height: 1.5;
   font-size: 1rem;
   margin-top: 1rem;
@@ -97,10 +101,10 @@ ul li.gray {
 
 
 .product-details {
-  background-color: var(--light-gray);
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  background-color: var(--light-gray);
   align-items: center;
   width: 100%;
   /* padding: 0.7rem 1.5rem; */
@@ -150,10 +154,47 @@ div .b-lack {
 }
 
 
-.the-buttons {
+.invisible {
+  display: none;
+}
+
+
+.product-action {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-between;
   width: 100%;
-  gap: 5px;
+  margin: 1rem 0.5rem 0.5rem 0;
+  font-size: 0.6875rem;
 }
+
+
+.cart-button {
+  background-color: var(--purple);
+  padding: 0.5rem 0;
+  width: 9.0625rem;
+  border-radius: 0.2rem;
+  font-family: "Outfit", sans-serif;
+  font-weight: 500;
+  border: none;
+  color: var(--white);
+  cursor: pointer;
+}
+
+
+.wishlist-button {
+  background-color: var(--white);
+  padding: 0.5rem 0;
+  width: 9.0625rem;
+  border-radius: 0.2rem;
+  border: 2px solid var(--light-silver-gray);
+  font-family: "Outfit", sans-serif;
+  font-weight: 500;
+  color: var(--black);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+

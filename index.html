@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="3 Steps for Quality Feedback for SaaS Products"/>
+    <meta name="description" content="Nike Running Shoe Product Page"/>
 
     <link
       rel="icon"
@@ -21,8 +21,8 @@
     <title>Simple Product Master | devChallenges.io</title>
   </head>
   <body>
-    <article class="container">
-      <picture>
+    <main class="container">
+      <figure>
         <img 
           src="./resources/shoe_image.avif" 
           srcset="
@@ -35,53 +35,58 @@
             (max-width: 1280px) 1280px
           "
           alt="Men's Jordan Sneakers"
-          class="sneaker-img loading="lazy"
+          class="sneaker-img"
+          loading="lazy"
         />
-      </picture>
+      </figure>
       
-      <nav class="navbar">
+      <nav aria-label="Breadcrumb" class="breadcrumb">
         <ul>
-          <li>Home</li>
+          <li><a href="#">Home</a></li>
           <li>-</li>
-          <li>Products</li>
+          <li><a href="#">Products</a></li>
           <li>-</li>
-          <li class="gray">Sneakers</li>
+          <li class="text-gray"><a href="#">Sneakers</a></li>
         </ul>
       </nav>
       
-      <main class="the-product">
+      <section class="product-info">
         <h1>Nike Air Zoom Pegasus 38 for Running Men</h1>
         <p>The Nike Air Zoom Pegasus 38 is a high-performance running shoe designed for speed and agility. With its lightweight and responsive midsole, this shoe provides a smooth ride and excellent cushioning. The Pegasus 38 features a full-length Zoom Air unit for added bounce and a more natural stride. The upper is made of a breathable mesh material with a supportive Flyknit construction for a snug and comfortable fit.</p>
         
-        <div class="product-specs">
+        <section class="product-specs">
           <h2>Highlights:</h2>
           <ul>
             <li>Lightweight and Responsive Midsole.</li>
             <li>Full-Length Zoom Air Unit.</li>
             <li>Breathable Mesh Uppe.</li>
           </ul>
-        </div>
+        </section>
         
-        <article class="product-details">
+        <dl class="product-details">
           <div>
-            <p class="l-gray">COLOR</p>
-            <p class="b-lack">Black</p>
+            <dt class="l-gray">COLOR</dt>
+            <dt class="b-lack">Black</dt>
           </div>
           <div class="left">
-            <p class="l-gray">SIZE</p>
-            <p class="b-lack">42</p>
+            <dt class="l-gray">SIZE</dt>
+            <dt class="b-lack">42</dt>
           </div>
           <div class="center">
-            <p class="b-lack">$59.00</p>
+            <dt class="invisible">PRICE</dt>
+            <dt class="b-lack">$59.00</dt>
           </div>
-        </article>
+        </dl>
 
-        <article class="the-buttons">
-          <button>Add to cart</button>
-          <button>Add to wishlist</button>
-        </article>
-      </main>
+        <section class="product-action">
+          <button class="cart-button">Add to cart</button>
+          <button class="wishlist-button">
+            <img src="./resources/heart.svg" alt="heart logo">
+            Add to wishlist
+          </button>
+        </section>
+      </section>
       
-    </article>
+    </main>
   </body>
   
