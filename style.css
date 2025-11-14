@@ -130,6 +130,7 @@ ul li.text-gray {
 
 .product-specs h2 {
   font-size: 1rem;
+  font-weight: 600;
 }
 
 
@@ -162,7 +163,7 @@ ul li.text-gray {
 }
 
 
-.product-details div p {
+.product-details div dt {
   font-size: 0.937rem;
   margin: 0;
  }
@@ -255,12 +256,81 @@ div .b-lack {
 
 
 /* The Styles For Tablets */
-@media (min-width: 768px) {
+@media (min-width: 900px) {
   
-
+  body {
+    padding: 3rem 3rem;
+  }
   
   
+  .container {
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 3rem;
+  }
   
+  
+  figure {
+    flex: 0 0 45%;
+    max-width: 500px;
+  }
+  
+  
+  .sneaker-img {
+    margin: 0;
+    border-radius: 0.5rem;
+  }
+  
+  
+  .breadcrumb ul {
+    font-size: 1.1rem;
+  }
+  
+  
+  .product-info {
+    flex: 1;
+    margin-top: 2.5rem;
+    max-width: none;
+  }
+  
+  
+  .product-info h1 {
+    font-size: 1.75rem;
+  }
+  
+  
+  .product-info p {
+    font-size: 1.1rem;
+    text-align: justify;
+  }
+  
+  
+  .product-specs h2 {
+    font-size: 1.2rem;
+    margin-top: 1rem;
+    font-weight: 600;
+  }
+  
+  
+  .product-specs ul {
+    line-height: 1.4;
+  }
+  
+  
+  .center .b-lack {
+    font-size: 1.6rem;
+  }
+  
+  
+  .product-details .l-gray {
+    opacity: 2;
+  }
+  
+  
+  .cart-button,
+  .wishlist-button {
+    font-size: 1rem;
+    font-weight: 600;
+  }
   
 }
-
