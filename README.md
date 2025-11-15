@@ -36,7 +36,9 @@ This project is a pixel-perfect solution to the [Simple Product Page](https://de
 - How to compress local images from `.jpeg` to `avif` to optimize web perfomance and loading speed
 - Advanced responsive layout techniques with flexbox and media queries
 - In creating the web page for tablet and desktop devices using flexbox:
+
 i. I grouped the web page into two columns as show in the image, the image and contents so that `.container` have only 2 direct children. This made it easy to style the layout in 2-columns.
+
 ii. I understood if i had 2-columns side by side, then i need exactly two direct children in flexbox to make it work & if the items are more than two, then wrap them in div so that they are grouped in just two
 
 
@@ -44,28 +46,3 @@ ii. I understood if i had 2-columns side by side, then i need exactly two direct
 
 - [devChallenges.io](https://devchallenges.io/) for the challenge and assets
 - [Squoosh](https://squoosh.app/) to compress and convert images
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-I had some issues wuth the desktop style but this was how i was able to solve it:
-- 
