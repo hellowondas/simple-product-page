@@ -256,7 +256,7 @@ div .b-lack {
 
 
 /* The Styles For Tablets */
-@media (min-width: 900px) {
+@media (min-width: 56em) {
   
   body {
     padding: 3rem 3rem;
@@ -330,6 +330,85 @@ div .b-lack {
   .cart-button,
   .wishlist-button {
     font-size: 1rem;
+    font-weight: 600;
+  }
+  
+}
+
+
+/* Styles For Desktop Devices */
+@media (min-width: 75em) {
+  
+  body {
+    padding: 3rem 4rem;
+  }
+  
+  
+  .container {
+    gap: 5rem;
+  }
+  
+  
+  figure {
+    flex: 0 0 40%;
+    max-width: 550px;
+  }
+  
+  
+  .sneaker-img {
+    margin: 0;
+    border-radius: 0.5rem;
+  }
+  
+  
+  .breadcrumb ul {
+    font-size: 1.4rem;
+  }
+  
+  
+  .product-info {
+    flex: 1;
+    margin-top: 2.5rem;
+    max-width: none;
+  }
+  
+  
+  .product-info h1 {
+    font-size: 2rem;
+  }
+  
+  
+  .product-info p {
+    font-size: 1.2rem;
+    text-align: justify;
+  }
+  
+  
+  .product-specs h2 {
+    font-size: 1.3rem;
+    margin-top: 1.1rem;
+    font-weight: 600;
+  }
+  
+  
+  .product-specs ul {
+    line-height: 1.4;
+  }
+  
+  
+  .center .b-lack {
+    font-size: 1.6rem;
+  }
+  
+  
+  .product-details .l-gray {
+    opacity: 2;
+  }
+  
+  
+  .cart-button,
+  .wishlist-button {
+    font-size: 1.1rem;
     font-weight: 600;
   }
   
