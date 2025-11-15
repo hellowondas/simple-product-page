@@ -37,9 +37,9 @@ This project is a pixel-perfect solution to the [Simple Product Page](https://de
 - Advanced responsive layout techniques with flexbox and media queries
 - In creating the web page for tablet and desktop devices using flexbox:
 
-i. I grouped the web page into two columns as show in the image, the image and contents so that `.container` have only 2 direct children. This made it easy to style the layout in 2-columns.
+**i**. I grouped the webpage into two columns as show in the design; image and contents so that `.container` has only 2 direct children. This made it easy to style the layout in 2-columns.
 
-ii. I understood if i had 2-columns side by side, then i need exactly two direct children in flexbox to make it work & if the items are more than two, then wrap them in div so that they are grouped in just two
+**ii.** I understood that if i had 2-columns side by side, then i need exactly two direct children in flexbox to make it work & if the items are more than two, then wrap them in `divs` so that they are grouped in just two
 
 
 ## 🙏 Acknowledgements
